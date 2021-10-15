@@ -33,4 +33,10 @@ fun main(args:Array<String>){
         env1.step()
         println(env.animal)
     }
+//    RandomAgent("Bob", 0.2),
+    val env2 = FoodEnvironment(CleverAgent("harlie"),  SimpleAgent("Alice"))
+    for (i in 1..100) {
+        env2.step()
+    }
+    println(env.scores)
 }
